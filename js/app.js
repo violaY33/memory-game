@@ -211,6 +211,8 @@ function win() {
     offWatchCard();
     $('.modal.win-game').removeClass('hide');
     $('.modal.win-game').animateCss('bounceIn');
+    $('.stars').clone().appendTo('.modal.win-game .final-score');
+    $('.scores').clone().appendTo('.modal.win-game .final-score');
 }
 
 
@@ -264,10 +266,8 @@ function init() {
 
 }
 
-//  init();
 
 function startGame() {
-    //changeCursor('default');
     $('.modal.start-game').animateCss('bounceIn');
 
     $('.btn-start').click(() => {
@@ -283,3 +283,4 @@ function startGame() {
 }
 
 startGame();
+
