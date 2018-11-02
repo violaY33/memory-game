@@ -211,6 +211,7 @@ function win() {
     offWatchCard();
     $('.modal.win-game').removeClass('hide');
     $('.modal.win-game').animateCss('bounceIn');
+    $('.modal.win-game .final-score').html('');
     $('.stars').clone().appendTo('.modal.win-game .final-score');
     $('.scores').clone().appendTo('.modal.win-game .final-score');
 }
